@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-heading {
+  font-family: "Exo 2", sans-serif;
+  color: white;
+  font-size: 36px;
+  font-weight: 100;
+  line-height: 44px;
+  text-align: center;
+}
+
+.App {
+  background-image: url("./images/bg.png");
+  background-size: 1280px 680px;
+  width: 100vw;
+  min-height: 100vh;
+}
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+  }
+.content-first {
+  // margin: 0 0 5vh 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5vw;
+  padding: 0 5vw;
+}
+@media (max-width: 1200px) {
+  .card-block:last-child {
+    margin: auto;
+  }
+
+  .content-first {
+    // display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+    gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    // margin: 30px auto;
+    width:70px;
+  }
+  .content-first {
+    margin-top: 10px;
+    gap: 0px;
+  }
+  .main-heading {
+    font-size: 33px;
+  }
+}
+@media (max-width:1200px){
+  .card-block {
+    // margin: 30px auto;
+    transform: scale(0.9);
+  }
+}
+@media (max-width: 420px) {
+  .card-block {
+    margin: auto;
+  }
+  .main-heading {
+    font-size: 28px;
+  }
+  .container {
+    padding-bottom: 3vh;
+  }
+}
