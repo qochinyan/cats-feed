@@ -21,7 +21,6 @@ function Card({ setCorms, corms, data }) {
           <p className="recepe">
             <p>
               <b>{data.quantity}</b> Порций
-              <p />
               {data.gift > 1 ? <b>{data.gift} </b> : ""}
               {data.gift > 1 ? "мышей в подарок" : "мышь в подарок"}
             </p>

@@ -38,7 +38,7 @@ function App() {
         <h2 className="main-heading">Ты сегодня покормил кота?</h2>
         <main className="content-first">
           {corms.map((el, i) => {
-            return <Card setCorms={setCorms} corms={corms} data={el} />;
+            return <Card key={i} setCorms={setCorms} corms={corms} data={el} />;
           })}
         </main>
       </div>
